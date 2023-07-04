@@ -7,7 +7,7 @@ import useFirebase from '../Hooks/useFirebase';
 const Login = () => {
     // const location = useLocation();
     // const history = useHistory();
-    const { setIsLoading,user, googleSignIn, isLoading, handleemail, handlepassword, islogin, loginProcess, togglelogin, email, password, setError, error } = useFirebase();
+    const { setIsLoading,user,logout, googleSignIn, isLoading, handleemail, handlepassword, islogin, loginProcess, togglelogin, email, password, setError, error } = useFirebase();
     // const redirect_uri = location.state?.from || '/home'
     // console.log('came from', location.state?.from)
 
@@ -37,7 +37,7 @@ const Login = () => {
             <input onBlur={handlepassword} className='mx-auto w-2/3 mb-2' type="password" name="password" id="password" required placeholder="Enter your password" />
             <br />
             <input onChange={togglelogin} type="checkbox" className="form-check-input" id="exampleCheck1" />
-            <label className="form-check-label" htmlFor="exampleCheck1">Are you new to Sunshine Hospital?{islogin && <div><h6>Please Go to <Link to='/signup'>Sign Up</Link> page</h6></div>}</label>
+            <label className="form-check-label text-red-900" htmlFor="exampleCheck1">Are you new to Chrismas Store?{islogin && <div><h6 className='text-teal-500 font-bold'>Please Go to <Link className="text-blue-500 font-bold"to='/signup'>Sign Up</Link> page</h6></div>}</label>
             <br />
             <p className='text-danger'>{error}</p>
             <button onClick={handleSigninwithemailpassword}  className="rounded-full bg-lime-500 p-4 " >Login</button>
@@ -47,6 +47,8 @@ const Login = () => {
             <br />
             
             <button className="mb-4 rounded-full bg-green-500 p-4 " onClick={handleGoogleLogin} variant="warning">Google Sign in</button>
+
+            <button className="mb-4 ms-4 rounded-full bg-green-500 p-4 " onClick={logout} variant="warning">Sign Out</button>
         </div >
     );
 };

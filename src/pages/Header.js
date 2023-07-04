@@ -14,14 +14,16 @@ const Header = () => {
 		<h1 className="text-3xl text-blue-600 text-center font-bold my-3">Welcome to Our Christmas Store</h1> 
 		<p className="text-xs text-center">This page should be tried in safari, chrome or Mozila.</p> 
 	</div> 
+    
    
 
     <div>
 		<ul className="flex justify-center">
 			<li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/home">Home</Link></li>
-			<li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/contact">Contact Us</Link> </li>
+		{user.email && <ul className="flex justify-center"><li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/contact">Contact Us</Link> </li>
 			
-        <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/deals">Today's Deal</Link></li>
+            <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/deals">Today's Deal</Link></li></ul>}
+           
         <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/login">Login</Link></li>
         <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/signup">SignUp</Link></li>
 		</ul>

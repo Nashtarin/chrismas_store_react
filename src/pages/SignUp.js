@@ -26,10 +26,10 @@ const Signup = () => {
                     {user.email && <p className="text-green-600 text-2xl">Sign Up with Email and Password is Successful,Please Go to <Link to='/login'>Login</Link> page</p>}
 
                 </form>
-                <div className="  rounded-xl p-3 container mx-auto w-2/6">
+                <div className="rounded-xl p-3 container mx-auto w-2/6">
 
-                <p >Already have an account? <Link to='/login'>Login</Link></p>
-                <h6 className='text-yellow-700'> Or you can sign in with Google</h6>
+                <p className='text-purple-800'>Already have an account? <Link className='font-bold text-blue-500' to='/login'>Login</Link></p>
+                <h6 className='text-green-600'> Or you can sign in with Google</h6>
                 <button className="mb-4 rounded-full bg-green-500 p-4 " onClick={googleSignIn} variant="warning">Google Sign in</button>
                 </div>
             </div>

@@ -66,7 +66,7 @@ const useFirebase = () => {
                 console.log(user);
                 setError('');
                 // verifyemail();
-                setUserName();
+                setUserName(user.displayName);
             })
             .catch(error => {
                 setError(error.message);

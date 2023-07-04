@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -12,10 +12,11 @@ import Home from './pages/Home';
 import Deals from './pages/Deals';
 import Signup from './pages/SignUp';
 import Login from './pages/Login';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
- 
+ <AuthProvider>
     <BrowserRouter>
     <Header></Header>
       <Routes>
@@ -30,6 +31,7 @@ function App() {
       <Footer></Footer>
     
     </BrowserRouter>
+    </AuthProvider>
    
   );
 }
