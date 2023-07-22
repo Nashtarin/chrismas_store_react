@@ -13,7 +13,7 @@ const CardDeal = ({products}) => {
 		  <p className="text-gray-700 text-base">
 			Lorem ipsum dolor sit amet
 		  </p>
-          <span class="inline-block bg-red-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-200 mr-2 mb-2">{products.discount}%</span>
+          <span className="inline-block bg-red-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-200 mr-2 mb-2">{products.discount}%</span>
 
 		</div>
 	

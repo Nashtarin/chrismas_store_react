@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import pic from '../images/light.png'
 import './style.css'
-import { Link } from 'react-router-dom';
+
 
 import CardHome from '../components/CardHome';
 
@@ -9,10 +9,11 @@ import CardHome from '../components/CardHome';
 const Home = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('./data.json')
+        fetch('http://localhost:8000/products')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
+    console.log(data) 
    
     return (
         <div style={{margin:'10px',padding:'5px'}}>
@@ -20,9 +21,9 @@ const Home = () => {
   
     <div>
     <img src={pic} alt="Christmas Light" style={{width:'100%',height:"300px",margin:'auto'}}/>
-    <h2 className="font-bold text-center text-2xl text-blue-600 mt-3"> Product Categories </h2>
+   
     <div className="grid grid-cols-4 gap-10 my-4 container mx-auto">
-       {data.map(p=><CardHome p={p.id} products={p}></CardHome>)}
+       {data.slice(0,4).map(p=><CardHome p={p._id} products={p}></CardHome>)}
 
 
     </div>

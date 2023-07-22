@@ -22,7 +22,10 @@ const Header = () => {
 			<li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/home">Home</Link></li>
 		{user.email && <ul className="flex justify-center"><li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/contact">Contact Us</Link> </li>
 			
-            <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/deals">Today's Deal</Link></li></ul>}
+            <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/deals">Today's Deal</Link></li>
+            <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/addaproduct">Add Products</Link></li>
+            <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to='/manageproducts'>Manage Products</Link></li>
+            </ul>}
            
         <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/login">Login</Link></li>
         <li className="bg-emerald-300 text-white font-bold text-lg p-1 m-1 border rounded-lg hover:text-xl hover:text-blue-600"> <Link to="/signup">SignUp</Link></li>

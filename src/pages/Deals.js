@@ -5,7 +5,7 @@ import CardDeal from '../components/CardDeal';
 const Deals = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('./data.json')
+        fetch('http://localhost:8000/products')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
@@ -14,7 +14,7 @@ const Deals = () => {
     return (
         <div>
         <div className="grid grid-cols-4 gap-10 my-4 container mx-auto">
-            {data.slice(4).map(p=><CardDeal key={p.id} products={p}></CardDeal>)}
+            {data.slice(4).map(p=><CardDeal key={p._id} products={p}></CardDeal>)}
 
         </div>
         <section  className='container mx-auto my-5'>

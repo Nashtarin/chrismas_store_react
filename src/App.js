@@ -13,6 +13,8 @@ import Deals from './pages/Deals';
 import Signup from './pages/SignUp';
 import Login from './pages/Login';
 import AuthProvider from './Context/AuthProvider';
+import AddAProduct from './pages/AddAProduct';
+import ManageTProducts from './pages/ManageTProducts'
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
         <Route path='/deals' element={<Deals/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/addaproduct' element={<AddAProduct/>}/>
+        <Route path='/manageproducts' element={<ManageTProducts/>}/>
+        {/* <Route path='/products/:id' element={<ManageTProducts/>}/> */}
+
        
       </Routes>
       <Footer></Footer>

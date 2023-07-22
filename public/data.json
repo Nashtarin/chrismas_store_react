@@ -1,31 +1,31 @@
 [
     {
-        "id": 1,
+        
         "name": "Decorations",
         "img": "https://www.newhomesource.com/learn/wp-content/uploads/2020/10/rustic-christmas.jpg.webp"
       
     },
     {
-        "id": 2,
+        
         "name": "Recipies",
         "img": "https://images.immediate.co.uk/production/volatile/sites/30/2022/09/gingerbread-house-92008e2.jpg?quality=90&webp=true&resize=375,341"
        
     },
     {
-        "id": 3,
+       
         "name": "Toys",
         "img": "https://media.istockphoto.com/id/1069600900/photo/girls-opening-christmas-gifts.jpg?s=1024x1024&w=is&k=20&c=SlxbM82MgIv-NgMtjgw4qG7C6JXwWHQeviy-mvD34D0="
        
     },
     {
-        "id": 4,
+       
         "name": "Chrismas Store",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHm6gCdgPN5bkVhIA2O-hIM-wLR707MyLXQ&usqp=CAU"
        
     },
  
 {
-    "id": 5,
+   
     "name": "Chrismas Tree",
     "discount":15,
   
@@ -33,7 +33,7 @@
    
 },
 {
-    "id": 6,
+   
     "name": "Chrismas Bells",
     "discount":25,
 
@@ -41,7 +41,7 @@
    
 },
 {
-    "id": 7,
+   
     "name": "Chrismas Cookies",
     "discount":10,
    
@@ -49,7 +49,7 @@
    
 },
 {
-    "id": 8,
+   
     "name": "Toys",
     "discount":5,
   
